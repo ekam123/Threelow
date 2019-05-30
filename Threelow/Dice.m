@@ -14,4 +14,9 @@
     self.value = arc4random_uniform(6);
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%d", self.value];
+}
+
 @end

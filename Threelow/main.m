@@ -8,33 +8,33 @@
 
 #import <Foundation/Foundation.h>
 #import "Dice.h"
+#import "DiceManager.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         //Dictionary to play with for fun
-        NSDictionary *diceNumbers = @{@"1":@"⚀", @"2":@"⚁", @"3": @"⚂", @"4":@"⚃", @"5":@"⚄", @"6":@"⚅"};
+//        NSDictionary *diceNumbers = @{@"1":@"⚀", @"2":@"⚁", @"0": @"⚂", @"4":@"⚃", @"5":@"⚄", @"6":@"⚅"};
         
-        Dice *dice1 = [[Dice alloc] init];
-        Dice *dice2 = [[Dice alloc] init];
-        Dice *dice3 = [[Dice alloc] init];
-        Dice *dice4 = [[Dice alloc] init];
-        Dice *dice5 = [[Dice alloc] init];
+        DiceManager *diceManager = [[DiceManager alloc] init];
+        [diceManager initializeDice];
         
-        [dice1 rollDice];
-        [dice2 rollDice];
-        [dice3 rollDice];
-        [dice4 rollDice];
-        [dice5 rollDice];
+        NSString *userInput = [diceManager handleUserInput:@"'roll' - Roll Dice\n'quit' - Exit the Game:"];
+        BOOL gameON = YES;
         
-        NSLog(@"%d %d %d %d %d",[dice1 value],
-                                [dice2 value],
-                                [dice3 value],
-                                [dice4 value],
-                                [dice5 value]);
-        
-
-        
+        while (gameON) {
+            if ([userInput isEqualToString:@"quit"]) {
+                gameON = NO;
+            }
+            
+            [diceManager diceRollValues];
+            
+            NSString *moreInput = [diceManager handleUserInput:@"Would you like to roll again?(y/n)"];
+            if ([moreInput isEqualToString:@"n"]) {
+                gameON = NO;
+            }
+            
+        }
         
     }
     return 0;
