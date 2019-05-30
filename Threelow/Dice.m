@@ -11,7 +11,8 @@
 @implementation Dice
 
 -(void)rollDice {
-    self.value = arc4random_uniform(6);
+        self.value = arc4random_uniform(6);
+    
 }
 
 - (NSString *)description

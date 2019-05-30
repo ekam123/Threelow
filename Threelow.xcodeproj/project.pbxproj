@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0635FF7E229F5B1D001BAD7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635FF7D229F5B1D001BAD7C /* main.m */; };
 		0635FF86229F5E96001BAD7C /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635FF85229F5E96001BAD7C /* Dice.m */; };
-		0635FF89229F673A001BAD7C /* DiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635FF88229F673A001BAD7C /* DiceManager.m */; };
+		0635FF89229F673A001BAD7C /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0635FF88229F673A001BAD7C /* GameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +29,8 @@
 		0635FF7D229F5B1D001BAD7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0635FF84229F5E96001BAD7C /* Dice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
 		0635FF85229F5E96001BAD7C /* Dice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
-		0635FF87229F673A001BAD7C /* DiceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceManager.h; sourceTree = "<group>"; };
-		0635FF88229F673A001BAD7C /* DiceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceManager.m; sourceTree = "<group>"; };
+		0635FF87229F673A001BAD7C /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		0635FF88229F673A001BAD7C /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				0635FF7D229F5B1D001BAD7C /* main.m */,
-				0635FF87229F673A001BAD7C /* DiceManager.h */,
-				0635FF88229F673A001BAD7C /* DiceManager.m */,
+				0635FF87229F673A001BAD7C /* GameController.h */,
+				0635FF88229F673A001BAD7C /* GameController.m */,
 				0635FF84229F5E96001BAD7C /* Dice.h */,
 				0635FF85229F5E96001BAD7C /* Dice.m */,
 			);
@@ -130,7 +130,7 @@
 			files = (
 				0635FF86229F5E96001BAD7C /* Dice.m in Sources */,
 				0635FF7E229F5B1D001BAD7C /* main.m in Sources */,
-				0635FF89229F673A001BAD7C /* DiceManager.m in Sources */,
+				0635FF89229F673A001BAD7C /* GameController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
